@@ -1,0 +1,13 @@
+In this assignment you will use the Python turtle module to create some interesting stuff
+on screen. This assignment will give you a chance to work on functions and loops
+and to learn new turtle functions. It is also a creative assignment that you can have
+some fun with.
+There are specific requirements you will need to follow to get full grades.
+1. You must put all your code in one Python module named concept.py
+2. You must have a function called sketch() that has no parameters, and that can only
+create object of type turtle and call other functions.
+3. You must use at least one object.
+4. You must have at least 7 functions (USEFUL/Appropriate) in your program,
+besides the function sketch().
+5. You must have at least Three functions that have a for statement that can generate
+different patterns
