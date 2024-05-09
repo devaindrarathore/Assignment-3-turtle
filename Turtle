@@ -1,13 +1,86 @@
-In this assignment you will use the Python turtle module to create some interesting stuff
-on screen. This assignment will give you a chance to work on functions and loops
-and to learn new turtle functions. It is also a creative assignment that you can have
-some fun with.
-There are specific requirements you will need to follow to get full grades.
-1. You must put all your code in one Python module named concept.py
-2. You must have a function called sketch() that has no parameters, and that can only
-create object of type turtle and call other functions.
-3. You must use at least one object.
-4. You must have at least 7 functions (USEFUL/Appropriate) in your program,
-besides the function sketch().
-5. You must have at least Three functions that have a for statement that can generate
-different patterns
+import turtle
+def repeat_shape(turtle_obj):
+i = 0
+while i < 15:
+turtle_obj.penup()
+turtle_obj.goto(100, -150)
+turtle_obj.pendown()
+turtle_obj.forward(50)
+turtle_obj.left(90)
+turtle_obj.forward(50)
+turtle_obj.left(90)
+turtle_obj.forward(50)
+turtle_obj.left(90)
+turtle_obj.forward(50)
+turtle_obj.left(90)
+turtle_obj.left(30)
+i = i + 1
+Demo_1 = turtle.Turtle()
+repeat_shape(Demo_1)
+import turtle
+wn = turtle.Screen()
+def draw_spiral(t):
+for _ in range(40):
+t.forward(_)
+t.right(40)
+def draw_star(t):
+t.penup()
+t.goto(0,-120)
+t.pendown()
+for _ in range(5):
+t.forward(100)
+t.right(144)
+def draw_triangle(t):
+t.penup()
+t.goto(0,220)
+t.pendown()
+for _ in range(3):
+t.forward(100)
+t.left(120)
+def draw_square(t):
+t.penup()
+t.goto(-100,0)
+t.pendown()
+for _ in range(4):
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.right(30)
+def draw_circle(t):
+t.penup()
+t.goto(70,-10)
+t.pendown()
+t.circle(70)
+def draw_shape(t):
+t.penup()
+t.goto(200, 150)
+t.pendown()
+for _ in range(9):
+t.forward(100)
+t.left(120)
+t.forward(100)
+t.left(120)
+t.forward(100)
+t.left(120)
+t.left(40)
+def draw_flower(t):
+t.penup()
+t.goto(200,-70)
+t.pendown()
+for i in range(36):
+t.forward(100)
+t.left(170)
+def sketch():
+t = turtle.Turtle()
+draw_spiral(t)
+draw_star(t)
+draw_triangle(t)
+draw_square(t)
+draw_circle(t)
+draw_shape(t)
+draw_flower(t)
+sketch()
+wn.exitonclick()
